@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<body>
+    <p>I am Pawan Tiwari</p>
+    <P>I am <h3 id="titles1">Software Engineer</h3></P>
+    <button onclick="fun()">Next</button>
+    <script type="text/javascript">
+        let a= ["Web developer", "Front end developer", "Java developer","Python developer","Full stack developer","Programmer"];
+        let n=a.length;
+        let i=0;
+        function fun(){
+                if(i===n){
+                    i=0;
+                }
+                document.getElementById("titles1").innerHTML=a[i++];
+            
+        }
+    </script>
+    
+</body>
+</html>
